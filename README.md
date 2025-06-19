@@ -1,3 +1,4 @@
+
 # Aristan CRM
 
 Aristan CRM is a lightweight, web-based Customer Relationship Management (CRM) system built with JSP, JDBC, and Bootstrap. It helps manage student enquiries, follow-ups, and user roles (Admin and Employee) with a clean, responsive UI.
@@ -33,7 +34,9 @@ Aristan CRM is a lightweight, web-based Customer Relationship Management (CRM) s
 - MySQL Database
 
 ## 📁 Project Structure
-'''bash
+
+```
+
 /web
 │
 ├── login.jsp
@@ -49,28 +52,32 @@ Aristan CRM is a lightweight, web-based Customer Relationship Management (CRM) s
 └── util/
 └── DBConnection.java
 
+````
+
 ## 🧑‍💻 Setup Instructions
 
-1. Clone the repository
-   '''bash
+1. **Clone the repository**
+   ```bash
    git clone https://github.com/yourusername/aristan-crm.git
    cd aristan-crm
 
 
-2. Configure the database
+2. **Configure the database**
 
    * Create a MySQL database (e.g. `aristan_crm`)
    * Run the SQL schema file to create the tables (`users`, `enquiries`, `followups`, etc.)
 
-3. Update DB credentials
+3. **Update DB credentials**
 
    In `DBConnection.java`, set your DB connection details:
 
+   ```java
    private static final String URL = "jdbc:mysql://localhost:3306/aristan_crm";
    private static final String USER = "root";
    private static final String PASSWORD = "yourpassword";
-   
-4. Deploy on Apache Tomcat
+   ```
+
+4. **Deploy on Apache Tomcat**
 
    * Package the project as a `.war` or use it directly in the `webapps/` folder.
    * Start Tomcat and access the app via `http://localhost:8080/aristan-crm/`
@@ -79,18 +86,7 @@ Aristan CRM is a lightweight, web-based Customer Relationship Management (CRM) s
 
    If not seeded, insert a default admin:
 
+   ```sql
    INSERT INTO users (username, password, role, name) VALUES ('admin', 'admin123', 'Admin', 'Admin User');
-
-## 📷 Screenshots
-
-> *(Add screenshots of the dashboard, follow-up page, etc., here)*
-
-## ✅ To-Do / Improvements
-
-* Password hashing (e.g., using BCrypt)
-* Pagination in enquiry list
-* Email reminders for follow-ups
-* Inactivity-based session timeout
-* Search and filtering options
-
+   ```
 
