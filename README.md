@@ -1,3 +1,4 @@
+# Aristan CRM
 
 Aristan CRM is a lightweight, web-based Customer Relationship Management (CRM) system built with JSP, JDBC, and Bootstrap. It helps manage student enquiries, follow-ups, and user roles (Admin and Employee) with a clean, responsive UI.
 
