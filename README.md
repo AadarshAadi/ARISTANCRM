@@ -33,7 +33,7 @@ Aristan CRM is a lightweight, web-based Customer Relationship Management (CRM) s
 - MySQL Database
 
 ## 📁 Project Structure
-
+'''bash
 /web
 │
 ├── login.jsp
@@ -52,6 +52,7 @@ Aristan CRM is a lightweight, web-based Customer Relationship Management (CRM) s
 ## 🧑‍💻 Setup Instructions
 
 1. Clone the repository
+   '''bash
    git clone https://github.com/yourusername/aristan-crm.git
    cd aristan-crm
 
